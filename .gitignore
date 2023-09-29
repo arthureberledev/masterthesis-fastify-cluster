@@ -1,0 +1,19 @@
+# Node.js / Fastify
+node_modules/
+npm-debug.log
+yarn-error.log
+.env
+
+# Terraform
+**/*.tfstate
+**/*.tfstate.backup
+**/*.tfvars
+**/.terraform/
+**/terraform.tfstate.d/
+
+# Editor/IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*.swn

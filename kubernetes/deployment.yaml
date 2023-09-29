@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: fastify-docker-deployment
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: fastify-docker
+  template:
+    metadata:
+      name: fastify-docker
+      labels:
+        app: fastify-docker
+    spec:
+      containers:
+        - name: fastify-docker
+          image: arthureberle/fastify-docker:latest
+          ports:
+            - containerPort: 3000
